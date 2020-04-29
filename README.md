@@ -1,3 +1,3 @@
 Shreyash Wasnik,
 Vinayak Wali,
-yash patil
+Yash Patil
