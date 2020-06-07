@@ -1,0 +1,21 @@
+<%- include("./partials/header") %>
+
+<h1>Book A Table</h1>
+
+<div class="container">
+    <form class="form-group" action="/booking" method="post">
+        <h5>Name</h5>
+        <input class="form-control" type="text" name="name" placeholder="Your name">
+        <h5>Email</h5>
+        <input class="form-control" type="email" name="email" placeholder="Your email">
+        <h5>Mobile Number</h5>
+        <input class="form-control" type="text" name="number" placeholder="Your mobile number">
+        <h5>Date</h5>
+        <input class="form-control" type="date" name="date" placeholder="date">
+        <br>
+        <input type="submit" value="Book Now!">
+    </form>
+</div>
+
+
+<%- include("./partials/footer") %>
