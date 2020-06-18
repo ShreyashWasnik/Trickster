@@ -4,7 +4,35 @@ const express  = require("express"),
       passport = require("passport")
 
 //Bring in User Model
-let User = require("../models/user");
+let User  = require("../models/user"),
+    Order = require("../models/order"),
+    Cart  = require("../models/cart")
+
+//profile page
+router.get("/profile" , isLoggedIn , (req , res) => {
+    Order.find({user: req.user}, (err , orders) => {
+        if(err) {
+            return res.write("ERROR!")
+        }
+        var cart;
+        orders.forEach((order) => {
+            cart = new Cart(order.cart);
+            order.items = cart.generateArray()
+        });
+        res.render('profile.hbs' , {orders: orders , user: req.user});
+    });
+});
+
+//Logout
+router.get("/logout" , (req , res) => {
+    req.logout();
+    req.flash("succes" , "You are logged out");
+    res.redirect("/users/login");
+});
+
+router.use("/" , notLoggedIn , (req , res , next) => {
+    next();
+});
 
 //Register Form
 router.get("/register" , (req , res) => {
@@ -51,7 +79,7 @@ router.post("/register" , (req , res) => {
                         console.log(err);
                         return;
                     } else {
-                        req.flash('success' , 'You are now registered and can login');
+                        req.flash('succes' , 'You are now registered and can login');
                         res.redirect("/users/login");
                     }
                 })
@@ -74,12 +102,19 @@ router.post("/login" , (req , res , next) => {
     })(req , res , next);
 });
 
-//Logout
-router.get("/logout" , (req , res) => {
-    req.logout();
-    req.flash("success" , "You are logged out");
-    res.redirect("/users/login");
-});
-
-
 module.exports = router;
+
+function isLoggedIn(req , res , next) {
+    if (req.isAuthenticated()){
+        return next();
+    }
+    req.flash("error" , "You first need to log in");
+    res.redirect("/users/login");
+}
+
+function notLoggedIn(req , res , next) {
+    if (!req.isAuthenticated()){
+        return next();
+    }
+    res.redirect("/");
+}

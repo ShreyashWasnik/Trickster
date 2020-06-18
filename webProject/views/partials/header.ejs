@@ -32,7 +32,10 @@
                   <a class="nav-link" href="#">Contacts</a>
                 </li>
               </ul>
-              <ul class="nav navbar-nav navbar-right">
+              <ul  class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="/cart">Cart</a>
+                </li>
                 <% if(!user) { %>
                   <li class="nav-item">
                     <a class="nav-link" href="/users/register">Register</a>
@@ -40,7 +43,11 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/users/login">Login</a>
                   </li>
+                  
                 <% } else { %>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/users/profile">User Profile</a>
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/users/logout">Logout</a>
                   </li>
@@ -49,6 +56,10 @@
             </div>
           </nav>
     </div>
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
     <%- messages("message" , locals) %>
-
+ 
 

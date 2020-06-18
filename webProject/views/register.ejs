@@ -1,24 +1,23 @@
 <%- include("./partials/header") %>
 
-<h1>Register</h1>
-
-<div class="container">
-    <form class="form-group" action="/users/register" method="post">
-        <h5>Name:</h5>
-        <input class="form-control" type="text" name="name" placeholder="Your name" required>
-        <h5>Email:</h5>
-        <input class="form-control" type="email" name="email" placeholder="Your email" required>
-        <h5>Username:</h5>
-        <input class="form-control" type="text" name="username" placeholder="username" required>
-        <h5>Password:</h5>
-        <input class="form-control" type="password" name="password" required>
-        <h5>Confirm Password:</h5>
-        <input class="form-control" type="password" name="password2" required>
-        <br>
-        <input type="submit" value="Register">
-    </form>
+<div class="regis">
+        <form class="form" action="/users/register" method="post">
+            <h1>Register</h1>
+            
+            <h5>Name:</h5>
+            <input class="form-control" type="text" name="name" placeholder="Your name" required>
+            <h5>Email:</h5>
+            <input class="form-control" type="email" name="email" placeholder="Your email" required>
+            <h5>Username:</h5>
+            <input class="form-control" type="text" name="username" placeholder="username" required>
+            <h5>Password:</h5>
+            <input class="form-control" type="password" name="password" required>
+            <h5>Confirm Password:</h5>
+            <input class="form-control" type="password" name="password2" required>
+            <br>
+            <input class="sub-btn" type="submit" value="Register">
+        </form>
 </div>
-
 
 
 <%- include("./partials/footer") %>
