@@ -15,6 +15,9 @@ app.set("view engine" , "ejs");
 app.engine("hbs" , hbs({extname: "hbs" , defaultLayout: "layout"}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
+//seed the db
+let seedDB = require('./seeder');
+seedDB();
 
 //Express session middleware
 app.use(session({
