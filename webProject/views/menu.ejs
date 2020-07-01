@@ -10,24 +10,35 @@
             </div>
         </div>
  <% } %> 
+</div>
 
-<% products.forEach((product) => { %>
+<div class="menu-container">
+    <% products.forEach((product) => { %>
         <div class="row">
-            <% product.forEach((item) => { %>
-                <div class="col-md-4 col-sm-6 col-xs-12 cmd">
-                    <div class="thumbnail">
-                        <img style="border-radius: 20px;" src="<%= item.image %>">
-                        <div class="caption">
-                            <h3><%= item.name %></h3>
-                            <h4>Rs.<%= item.price%></h4>
-                            <a href="/add-to-cart/<%= item._id %>" class="btn btn-success">Add to Cart</a>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-11">
+                <% product.forEach((item) => { %>
+                    <div class="col-md-4 col-sm-6 col-xs-12 ">
+                        <div class="thumbnail">
+                            <img src="<%= item.image %>">
+                            <div class="caption">
+                                <center><h3><%= item.name %></h3></center>
+                                <h4>Rs.<%= item.price%></h4>
+                                <a href="/add-to-cart/<%= item._id %>" class="btn btn-success cart">Add to Cart</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <% }) %>
+                <% }) %>
+            </div>
         </div>
 <% }) %>
 </div>
+
+<script>
+    let cart = document.querySelector('.cart');
+    cart.addEventListener('click' , () => alert('added to the cart'));
+</script>
+
 
 
 <%- include("./partials/footer") %>
