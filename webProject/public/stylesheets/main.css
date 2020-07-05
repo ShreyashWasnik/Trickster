@@ -17,10 +17,10 @@
 
 .landing-text {
     text-align: center;
-    padding-top: 500px;
+    padding-top: 430px;
     font-family: 'Caveat', cursive; 
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
@@ -34,12 +34,47 @@
     font-family: 'Caveat';
 }
 
+.ct-btn-scroll {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 50px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
 .cuisine {
     font-family: 'Caveat';
 }
 
 .lead {
-    font-size: 50px;
+    font-size: 25px;
+} 
+
+.book{
+    background : url(https://images.pexels.com/photos/163999/pexels-photo-163999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+   
+}
+
+.book>h1{
+    font-family: 'Caveat';
+    color: white;
+}
+
+.chef{
+    font-family: 'Caveat';
+
 }
 
 .indexhead {
@@ -215,15 +250,26 @@ menu-container h4 a {
     color: lightcoral;
 }
 
-#footer {
-    background: black; 
-    width: 100vw;
-    height: absolute;
-    color: white;   
-    text-align: center;
-    padding: 20px;
-    margin-top:0%;
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 5% 5% 10% 5%;
+    color: #FFF;
+    margin-bottom: none;
+
 }
+
+.fa{
+    padding: 15px;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.fa:hover{
+    color: #D5D5D5;
+    text-decoration: none;
+}
+
 
 #footermain{
     background: black; 
