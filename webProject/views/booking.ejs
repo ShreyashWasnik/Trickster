@@ -1,20 +1,26 @@
 <%- include("./partials/header") %>
 
 <div class="booking">
-    <form class="form" action="/booking" method="post">
+    <form class="form" action="/">
         <h1>Book Your Table</h1>
         <h5>Name</h5>
-        <input class="form-control" type="text" name="name" placeholder="Your name" >
+        <input class="form-control" type="text" name="name" placeholder="Your name" required>
         <h5>Email</h5>
-        <input class="form-control" type="email" name="email" placeholder="Your email">
+        <input class="form-control" type="email" name="email" placeholder="Your email" required>
         <h5>Mobile Number</h5>
-        <input class="form-control" type="text" name="number" placeholder="Your mobile number">
+        <input class="form-control" type="text" name="number" placeholder="Your mobile number" required>
         <h5>Date</h5>
-        <input class="form-control" type="date" name="date" placeholder="date">
+        <input class="form-control" type="date" name="date" placeholder="date" required>
         <br>
-        <input class="btn btn-success" type="submit" value="Book Now" style="margin-left: 130px;">
+        <input class="btn btn-success sub" type="submit" value="Book Now" style="margin-left: 130px;">
     </form>
 </div>
+
+<script> 
+    document.querySelector('.sub').addEventListener('click' , () => {
+        alert('Your table has been booked');
+    });
+</script>
 
 
 

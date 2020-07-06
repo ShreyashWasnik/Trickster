@@ -6,7 +6,7 @@ const express  = require("express"),
 //Bring in User Model
 let User  = require("../models/user"),
     Order = require("../models/order"),
-    Cart  = require("../models/cart")
+    Cart  = require("../models/cart");
 
 //profile page
 router.get("/profile" , isLoggedIn , (req , res) => {

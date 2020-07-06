@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #home{ 
     background : url(https://images.unsplash.com/photo-1558538337-aab544368de8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) no-repeat center center fixed; 
     display: table; 
@@ -311,7 +315,11 @@ footer{
     height: 240px;
 }
 
-.alert-err{
+.timing {
+    font-size: 10px;
+}
+
+.alert-error{
     color: #a94442;
     background-color: #f2dede;
     border-color: #ebccd1;
