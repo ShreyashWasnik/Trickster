@@ -1,10 +1,10 @@
 const express          = require("express"),
       bodyParser       = require("body-parser"),
       mongoose         = require("mongoose"),
-      session          = require("express-session"),
       passport         = require("passport"), 
       expressValidator = require("express-validator"),
       flash            = require("connect-flash"),
+      session          = require("express-session"),
       mongoStore       = require("connect-mongo")(session),
       hbs              = require("express-handlebars"),
       app              = express();
@@ -61,15 +61,16 @@ require("./config/passport")(passport);
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use((req , res , next) => {
-  res.locals.user = req.user;
-  res.locals.session = req.session;
-  next();
-});
-
 let users   = require("./routes/users"),
     menu    = require("./routes/menu"),
     booking = require("./routes/booking");
+
+app.use((req , res , next) => {
+  res.locals.user = req.user;
+  res.locals.errors = req.errors;
+  res.locals.session = req.session;
+  next();
+});
 
 app.use("/users" , users);
 app.use("" , menu);

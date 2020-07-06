@@ -5,9 +5,9 @@
         <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
             <h1>Checkout</h1>
             <h4>Your Total: Rs.<%= total %></h4>
-            <div id="charge-error" class="alert alert-danger <% if(noError) %> d-none">
-                <%= errMsg %>
-            </div>
+                <div id="charge-error" class="alert alert-danger <% if(noError) %> hidden">
+                    <%= errMsg %>
+                </div>
             <form action="/checkout" method="post" id="checkout-form">
                 <div class="row">
                     <div class="col-xs-12">
@@ -43,16 +43,18 @@
                                     <input type="text" id="card-expiry-month" class="form-control" required>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="card-expiry-year">Expiry Year</label>
-                                <input type="text" id="card-expiry-year" class="form-control" required>
+                            <div class="col-xs-6">
+                                <div class="form-group">
+                                    <label for="card-expiry-year">Expiry Year</label>
+                                    <input type="text" id="card-expiry-year" class="form-control" required>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12">
                         <div class="form-group">
                             <label for="card-cvc">CVV</label>
-                            <input type="text" id="card-cvc" class="form-control" required>
+                            <input type="password" id="card-cvc" class="form-control" required>
                         </div>
                     </div>
                 </div>
