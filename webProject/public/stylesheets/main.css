@@ -108,7 +108,7 @@ html {
 
 .cart{
 
-   margin-left: 100px; 
+   margin-left: 160px; 
 
 }
 
@@ -122,13 +122,16 @@ menu-container h4 a {
 
 .price{
     margin-top: 30px;
-    margin-left: 70px;
+    margin-left: 10px;
 }
 
 .cash{
     margin-right: 20px;
 }
 
+/* .test span{
+    display: inline;
+} */
 
 
 .form {

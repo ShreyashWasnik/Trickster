@@ -20,12 +20,12 @@
             
                 <% product.forEach((item) => { %>
                     
-                         <div class="col-lg-4 col-sm-6">
+                         <div class="col-lg-4 col-sm-6 test">
                         <div class="thumbnail">
                             <img src="<%= item.image %>">
                             <div class="caption">
                                 <center><h3><%= item.name %></h3></center>
-                                <h4 class="price" ><i class="fas fa-rupee-sign"></i><%= item.price%><a href="/add-to-cart/<%= item._id %>" class="btn btn-success cart ">Add to Cart</a></h4>
+                                <h4 class="price"><span id="cash"><i class="fas fa-rupee-sign"></i><%= item.price%></span><a href="/add-to-cart/<%= item._id %>" class="btn btn-success cart ">Add to Cart</a></h4>
                                 
                             </div>
                         </div>
