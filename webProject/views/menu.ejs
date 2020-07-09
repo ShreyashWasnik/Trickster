@@ -12,26 +12,31 @@
  <% } %> 
 </div>
 
-<div class="menu-container">
+<div class=" menu-container">
+<div class="container temp">
     <% products.forEach((product) => { %>
-        <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-11">
+        
+            
+            
                 <% product.forEach((item) => { %>
-                    <div class="col-md-4 col-sm-6 col-xs-12 ">
+                    
+                         <div class="col-lg-4 col-sm-6">
                         <div class="thumbnail">
                             <img src="<%= item.image %>">
                             <div class="caption">
                                 <center><h3><%= item.name %></h3></center>
-                                <h4>Rs.<%= item.price%></h4>
-                                <a href="/add-to-cart/<%= item._id %>" class="btn btn-success cart">Add to Cart</a>
+                                <h4 class="price" ><i class="fas fa-rupee-sign"></i><%= item.price%><a href="/add-to-cart/<%= item._id %>" class="btn btn-success cart ">Add to Cart</a></h4>
+                                
                             </div>
                         </div>
                     </div>
+                    
+                   
                 <% }) %>
-            </div>
-        </div>
+            
+       
 <% }) %>
+</div>
 </div>
 
 <script>
