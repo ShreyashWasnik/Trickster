@@ -26,8 +26,8 @@ router.get("/profile" , isLoggedIn , (req , res) => {
 //Logout
 router.get("/logout" , (req , res) => {
     req.logout();
-    req.flash("succes" , "You are logged out");
-    res.redirect("/users/login");
+    // req.flash("succes" , "You are logged out");
+    res.redirect("/");
 });
 
 router.use("/" , notLoggedIn , (req , res , next) => {

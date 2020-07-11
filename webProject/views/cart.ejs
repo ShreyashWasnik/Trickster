@@ -8,17 +8,17 @@
                 <ul class="list-group">
                     <% products.forEach((product) => { %>
                         <li class="list-group-item">
-                            <span class="badge"><%= product.qty %></span>
                             <strong><%= product.item.name %></strong>
-                            <span class="label label-success">Rs.<%= product.price %></span>
+                            <span> | <%= product.qty %></span>
+                            <span class="label label-success" style="float: right;">Rs.<%= product.price %></span>
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     Action
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                  <li><a href="/reduce/<%= product.item._id %>">Reduce by 1</a></li>
-                                  <li><a href="/remove/<%= product.item._id %>">Remove All</a></li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" id="reduce" href="/reduce/<%= product.item._id %>">Reduce by 1</a></li>
+                                    <li><a class="dropdown-item" id="remove" href="/remove/<%= product.item._id %>">Remove All</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -26,7 +26,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-left: 610px;">
             <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
                 <strong>Total: Rs.<%= totalPrice %></strong>
             </div>
