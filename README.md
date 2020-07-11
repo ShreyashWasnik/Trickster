@@ -2,9 +2,8 @@
 ## Team name: Trickster
 **Team members**
 * Yash Patil : ypatil6342@gmail.com
-
-
-
+* Vinayak Wali : vinayakwali90@gmail.com
+* Shreyash Wasnik : shreyashwasnik24@gmail.com
 **Mentors**
 * Saurav Kanegaonkar
 * Akshat savla
@@ -16,7 +15,7 @@
 
 
 **Link to repository**
-* Google Drive Link :
+* Google Drive Link :https://drive.google.com/file/d/1HnTn8lk2DQv-MN20VfBAOVl37WBCvlGM/view?usp=sharing
 
 ### Technology stack ###
 ##### FRONTEND: #####
