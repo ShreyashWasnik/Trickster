@@ -4,7 +4,7 @@
 * Yash Patil : ypatil6342@gmail.com
 * Vinayak Wali : vinayakwali90@gmail.com
 * Shreyash Wasnik : shreyashwasnik24@gmail.com
-#### Mentors:####
+#### Mentors:
 * Saurav Kanegaonkar
 * Akshat savla
 * Aditya shah
