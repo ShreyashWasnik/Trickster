@@ -1,5 +1,5 @@
-# **RESTAURANT**
-## _Team name: Binary Beasts _
+# **RESTAURANT WEBSITE**
+## Team name: Trickster
 **Team members**
 * Yash Patil : ypatil6342@gmail.com
 
@@ -15,16 +15,16 @@
 asjnfjansfjnasfjnajsnffffjnaofnafnaifbuabeuaebguaegb
 
 
-Link to repository
-Google Drive Link
-App APK Link
+**Link to repository**
+* Google Drive Link
+* App APK Link
 
 ### Technology stack ###
-**FRONTEND:**
+##### FRONTEND: #####
 * HTML
 * CSS
 * JAVASCRIPT
-**BACKEND**
+#### BACKEND: #####
 * NODEJs
 * MONGODB
 
