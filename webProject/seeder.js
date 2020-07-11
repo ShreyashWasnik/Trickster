@@ -38,14 +38,14 @@ var products = [
         price: 200
     }),
     new Product({
-        image: "https://previews.123rf.com/images/indianfoodimages/indianfoodimages1901/indianfoodimages190103134/115544803-masala-soya-chunk-curry-made-using-soyabean-nuggets-and-spices-protein-rich-food-from-india.jpg",
-        name: "Masala Soya Chunk Curry",
-        price: 230
-    }),
-    new Product({
         image: "https://previews.123rf.com/images/indianfoodimages/indianfoodimages1906/indianfoodimages190601299/125405452-mix-vegetable-curry-indian-main-course-recipe-contains-carrots-cauliflower-green-peas-and-beans-baby.jpg",
         name: "Mix-Vegetable",
         price: 190
+    }),
+    new Product({
+        image: "https://previews.123rf.com/images/indianfoodimages/indianfoodimages1901/indianfoodimages190103134/115544803-masala-soya-chunk-curry-made-using-soyabean-nuggets-and-spices-protein-rich-food-from-india.jpg",
+        name: "Masala Soya Chunk Curry",
+        price: 230
     }),
     new Product({
         image: "https://previews.123rf.com/images/alex9500/alex95001409/alex9500140900168/31678197-indian-butter-chicken.jpg",

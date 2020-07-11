@@ -107,7 +107,7 @@ function isLoggedIn(req , res , next) {
     if (req.isAuthenticated()){
         return next();
     }
-    req.flash("err" , "You first need to log in");
+    req.flash("error" , "You first need to log in");
     req.session.oldUrl = req.url;
     res.redirect("/users/login");
 }

@@ -1,16 +1,42 @@
-<%- include("./partials/header") %>
+<%- include("./partials/header1") %>
 
-<div class="login1">
-    <form class="form" action="/users/login" method="post">
+    
+    <form class="form" action="/users/login" method="post" name="form" onsubmit="return validated()">
         <h1>Login</h1>
         <h5>Username:</h5>
         <input class="form-control" type="text" name="username" placeholder="username">
+        <div class="form_err" id="username_err">Please fill up your Username</div>
         <h5>Password:</h5>
         <input class="form-control" type="password" name="password">
+        <div class="form_err" id="pass_err">Please fill up your Password</div>
         <br>
         <input class="btn btn-success sub-btn" type="submit" value="Login">
         <p>Don't have an account? <a href="/users/register">Sign Up!</a></p>
     </form>
-</div>
 
-<%- include("./partials/footer") %>
+<script>
+    let username = document.forms['form']['username'];
+    let password = document.forms['form']['password'];
+
+    let name_err = document.getElementById('username_err');
+    let email_err = document.getElementById('pass_err');
+
+    function validated() {
+        if(username.value.length === 0) {
+            username.style.border = '1px solid red';
+            username_err.style.display = 'block';
+            username.focus();
+            return false;
+        }
+
+        if(password.value.length === 0) {
+            password.style.border = '1px solid red';
+            pass_err.style.display = 'block';
+            password.focus();
+            return false;
+        }
+    }
+
+</script>
+
+<%- include("./partials/footer1") %>

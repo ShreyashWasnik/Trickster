@@ -12,37 +12,33 @@
  <% } %> 
 </div>
 
-<div class=" menu-container">
-<div class="container temp">
-    <% products.forEach((product) => { %>
-        
-            
-            
-                <% product.forEach((item) => { %>
-                    
-                         <div class="col-lg-4 col-sm-6 test">
-                        <div class="thumbnail">
-                            <img src="<%= item.image %>">
-                            <div class="caption">
-                                <center><h3><%= item.name %></h3></center>
-                                <h4 class="price"><span id="cash"><i class="fas fa-rupee-sign"></i><%= item.price%></span><a href="/add-to-cart/<%= item._id %>" class="btn btn-success cart ">Add to Cart</a></h4>
-                                
+<div class="menu-container">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11">
+                <div class="container temp">
+                    <% products.forEach((product) => { %>
+                        <% product.forEach((item) => { %>
+                            <div class="col-md-4 col-sm-6 col-xs-12 cmdtest">
+                                <div class="thumbnail">
+                                    <img src="<%= item.image %>">
+                                    <div class="caption">
+                                        <center><h3><%= item.name %></h3></center>
+                                        <h4 class="price"><span id="cash"><i class="fas fa-rupee-sign"></i><%= item.price%></span><a href="/add-to-cart/<%= item._id %>" class="btn btn-success cart ">Add to Cart</a></h4>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                   
-                <% }) %>
-            
-       
-<% }) %>
-</div>
+                        <% }) %>      
+                    <% }) %>
+                </div>
+        </div>
+    </div>
 </div>
 
-<script>
+<!-- <script>
     let cart = document.querySelector('.cart');
     cart.addEventListener('click' , () => alert('added to the cart'));
-</script>
+</script> -->
 
 
 
