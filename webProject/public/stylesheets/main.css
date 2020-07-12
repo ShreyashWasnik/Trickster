@@ -7,7 +7,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 #home{ 
@@ -60,6 +60,10 @@ html {
 .lead {
     font-size: 25px;
 } 
+
+.fontcaveat{
+    font-family: 'Caveat', cursive; 
+}
 
 .book{
     background : url(https://images.pexels.com/photos/163999/pexels-photo-163999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed;
@@ -133,6 +137,7 @@ menu-container h4 a {
 .cartbkg{
     background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
+    padding-bottom: 8%;
 }
 
 
@@ -355,13 +360,15 @@ menu-container h4 a {
 
 #checkout .container {
     position: absolute;
-    top: 40px;
+    margin-top: 20px;
+    top: 20px;
     left: 400px;
-    width: 630px;
+    width: 530px;
     text-align: center;
     border-radius: 5px;
-    background-color:white;
-    padding-bottom: 50px;
+    color: #fff;
+    background-color:rgba(8, 7, 7,0.75);
+    padding-bottom: 20px;
 }
 
 #checkout .container header {
@@ -377,6 +384,15 @@ menu-container h4 a {
 .rupees{
     padding-right: 2%;
 }
+
+.profile{
+    background-image: url(https://images.pexels.com/photos/2748757/pexels-photo-2748757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 8%;
+}
+
 .form-outer form {
     display: flex;
     width: 400%;

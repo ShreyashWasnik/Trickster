@@ -19,6 +19,7 @@ router.get("/profile" , isLoggedIn , (req , res) => {
             cart = new Cart(order.cart);
             order.items = cart.generateArray()
         });
+       
         res.render('profile.hbs' , {orders: orders , user: req.user});
     });
 });
