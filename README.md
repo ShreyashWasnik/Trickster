@@ -45,7 +45,7 @@ Users can pay online using debit card making it easy to order online as well as 
 * Adding a Store Locator.
 * Helping nearby local restaurant to setup online platform. 
 ### Screenshots ###
-* ![home1](https://drive.google.com/file/d/1pGJ9qbwhKGAgNPyqcwEYNdPjJ3I-vDOa/view?usp=sharing)
+* ![home1](https://drive.google.com/uc?export=view&id=1pGJ9qbwhKGAgNPyqcwEYNdPjJ3I-vDOa)
 * ![home2](https://drive.google.com/file/d/1gLxMgsJUqMNPOmhNlG_r7e9HAUVLCSsw/view?usp=sharing)
 * ![home3](https://drive.google.com/file/d/1aRcRD3gcZCfk9nVAQY8wC1ykst4SvuUQ/view?usp=sharing)
 * ![ screenshot](https://drive.google.com/file/d/1kqGw9AjYOS4y5MqFZ8wchmZdAxhg-q8T/view?usp=sharing)
