@@ -1,26 +1,38 @@
 <%- include("./partials/header") %>
 
+<div class="cartbkg">
+
+
+
 <div class="container">
+    <br>
+    <br>
     <% if(products) { %>
+    
         <h1 style="text-align: center;">Cart Products</h1>
+        <br>
         <div class="row">
             <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-30">
                 <ul class="list-group">
                     <% products.forEach((product) => { %>
                         <li class="list-group-item">
-                            <strong><%= product.item.name %></strong>
-                            <span> | <%= product.qty %></span>
-                            <span class="label label-success" style="float: right;">Rs.<%= product.price %></span>
-                            <div class="dropdown">
+                            
+                            <h3><span class="rupees"><%= product.item.name %></span> | <%= product.qty %></h3>
+                            
+                            <h3><span style="float: right;"><i class="fas fa-rupee-sign"></i><%= product.price %></span></h3>
+                            <!-- <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                     Action
                                     <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
+                                </button> -->
+                                <!-- <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" id="reduce" href="/reduce/<%= product.item._id %>">Reduce by 1</a></li>
                                     <li><a class="dropdown-item" id="remove" href="/remove/<%= product.item._id %>">Remove All</a></li>
-                                </ul>
-                            </div>
+                                </ul> -->
+                            <!-- </div> -->
+
+                            <a id="reduce" href="/reduce/<%= product.item._id %>" class="btn btn-danger">Reduce by 1</a>
+                            <a id="remove" href="/remove/<%= product.item._id %>" class="btn btn-danger">Remove All</a>
                         </li>
                     <% }) %>
                 </ul>
@@ -28,13 +40,16 @@
         </div>
         <div class="row" style="margin-left: 610px;">
             <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-                <strong>Total: Rs.<%= totalPrice %></strong>
+                <h3>Total: <i class="fas fa-rupee-sign rupees"></i><%=  totalPrice %></h3>
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
                 <a href="/checkout" class="btn btn-success" type="button">CheckOut</button></a>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
     <% } else { %>
@@ -45,6 +60,34 @@
         </div>
     <% } %>
 </div>
+</div>
 
-<%- include("./partials/footer") %>
+
+<footer id="contact" class="container-fluid footer1">
+    <!-- <div class="row">
+        <div class="col-sm-4">
+            <h3>Contact Us</h3>
+            <br>
+            <h4>Our address and contact info here</h4>
+        </div>
+        <div class="col-sm-4">
+            <h3>Connect</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+
+        </div>
+
+        <div class="col-sm-4">
+           <h3>Indulge in</h3> 
+           <h3><em>Delicious</em> Spices</h3>
+        </div> -->
+    </div>
+</footer>
+
+
+
+
 

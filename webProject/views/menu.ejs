@@ -41,5 +41,20 @@
 </script> -->
 
 
+<footer class="footer1">
+    <div>
+        <center><a href="/cart " class="bt "><i class="fas fa-shopping-cart"></i>
+            <% if(session.cart === undefined || session.cart === null) { %>
+                <span class="badge"></span>
+              <% } else { %>
+                <span class="badge"><%= session.cart.totalQty %></span>
+              <% } %></a></center>
+       
+    </div>
+        
+    
+</footer>
+
+
 
 <%- include("./partials/footer") %>
