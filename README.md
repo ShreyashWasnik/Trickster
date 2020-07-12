@@ -6,13 +6,13 @@
 * Shreyash Wasnik : shreyashwasnik24@gmail.com
 #### Mentors:
 * Saurav Kanegaonkar
-* Akshat savla
-* Aditya shah
+* Akshat Savla
+* Aditya Shah
 
 ### Description  ###
-We have created a restaurant website named as **THE IMPERIAL SPICE** .Our website has feautures such as online ordering system,booking a table,cart system.
+We have created a restaurant website named as **THE IMPERIAL SPICE** . Our website has feautures such as online ordering and reservations.
 One can order different food items from the menu .For ordering user has to register and then login to add items to the cart.
-User can pay online using debit card.Hence it is easy for user to order online as well as user can book a table online .  
+Users can pay online using debit card making it easy to order online as well as book a table online .  
 
 **Link to repository**
 * Github Repository :https://github.com/ShreyashWasnik/Trickster
@@ -23,14 +23,14 @@ User can pay online using debit card.Hence it is easy for user to order online a
 * HTML
 * CSS
 * JAVASCRIPT
-* BOOTSTRAP3
+* BOOTSTRAP v3
 #### BACKEND: #####
-* NODEJs
-* MONGODB
+* NodeJS
+* MongoDB
 
 ### Project Setup ###
 * You can download or simply clone this repository :https://github.com/ShreyashWasnik/Trickster.
-* You need to install visual studio code,node js and mongodb.  
+* For quick setup we suggest you to download VS Code Editor with the pre-requisites NodeJS and MongoDB. 
 * In vs code terminal you need to install npm package.
 
 ### Usage ###
@@ -42,6 +42,7 @@ User can pay online using debit card.Hence it is easy for user to order online a
 * Simple and easy table booking. 
 ### Future Scope ###
 * Making UI more interactive.
+* Adding a Store Locator.
 * Helping nearby local restaurant to setup online platform. 
 ### Screenshots ###
 * https://drive.google.com/file/d/1SEeAXYWzp3zeM7aU_UbbvgzHjpUpzhaZ/view?usp=sharing
