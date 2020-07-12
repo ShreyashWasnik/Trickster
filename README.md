@@ -46,8 +46,8 @@ Users can pay online using debit card making it easy to order online as well as 
 * Helping nearby local restaurant to setup online platform. 
 ### Screenshots ###
 * ![image](https://drive.google.com/file/d/1SEeAXYWzp3zeM7aU_UbbvgzHjpUpzhaZ/view?usp=sharing)
-* https://drive.google.com/file/d/1Xxjn2mQMqIqaqRiLpyyWPLNllQ_pLtIK/view?usp=sharing
-* https://drive.google.com/file/d/19kDT7znY9jgrj-mEJRN0sjy-qxAPmkK4/view?usp=sharing
-* https://drive.google.com/file/d/1kqGw9AjYOS4y5MqFZ8wchmZdAxhg-q8T/view?usp=sharing
+* ![image](https://drive.google.com/file/d/1Xxjn2mQMqIqaqRiLpyyWPLNllQ_pLtIK/view?usp=sharing)
+* ![image](https://drive.google.com/file/d/19kDT7znY9jgrj-mEJRN0sjy-qxAPmkK4/view?usp=sharing)
+* ![image](https://drive.google.com/file/d/1kqGw9AjYOS4y5MqFZ8wchmZdAxhg-q8T/view?usp=sharing)
 
 
